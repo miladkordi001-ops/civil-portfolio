@@ -9,7 +9,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -26,13 +26,18 @@
                 <span class="logo-accent">MILAD</span>.KORDI
             </a>
             <nav class="nav-menu" id="nav-navigation">
-                <a href="#hero" class="nav-item active" id="nav-home">Home</a>
-                <a href="#skills" class="nav-item" id="nav-skills-link">Skills</a>
-                <a href="#projects" class="nav-item" id="nav-projects-link">Projects</a>
-                <a href="#calculator" class="nav-item" id="nav-calc-link">Estimator</a>
-                <a href="#timeline" class="nav-item" id="nav-timeline-link">Timeline</a>
-                <a href="#contact" class="nav-item" id="nav-contact-link">Contact</a>
+                <a href="#hero" class="nav-item active" id="nav-home" data-i18n="nav_home">Home</a>
+                <a href="#skills" class="nav-item" id="nav-skills-link" data-i18n="nav_skills">Skills</a>
+                <a href="#projects" class="nav-item" id="nav-projects-link" data-i18n="nav_projects">Projects</a>
+                <a href="#calculator" class="nav-item" id="nav-calc-link" data-i18n="nav_estimator">Estimator</a>
+                <a href="#timeline" class="nav-item" id="nav-timeline-link" data-i18n="nav_timeline">Timeline</a>
+                <a href="#contact" class="nav-item" id="nav-contact-link" data-i18n="nav_contact">Contact</a>
             </nav>
+            <div class="lang-switcher" id="civil-lang-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="de">DE</button>
+                <button class="lang-btn" data-lang="fa">FA</button>
+            </div>
             <div class="nav-toggle" id="mobile-nav-toggle">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -45,22 +50,22 @@
         <div class="hero-container">
             <div class="hero-grid-layout">
                 <div class="hero-content">
-                    <span class="hero-badge" id="hero-badge-tag"><i class="fa-solid fa-graduation-cap"></i> M.Sc. Student @ University of Duisburg-Essen</span>
-                    <h1 class="hero-title" id="main-heading">
+                    <span class="hero-badge" id="hero-badge-tag"><i class="fa-solid fa-graduation-cap"></i> <span data-i18n="hero_badge">M.Sc. Student @ University of Duisburg-Essen</span></span>
+                    <h1 class="hero-title" id="main-heading" data-i18n="hero_title">
                         Milad Kordi <br><span class="text-glow">Civil Engineer</span>
                     </h1>
-                    <p class="hero-subtitle" id="hero-description">
+                    <p class="hero-subtitle" id="hero-description" data-i18n="hero_desc">
                         Master's student specializing in Construction Management (Baubetrieb) and Economics. Over 5 years of engineering experience including major infrastructure projects (Roghun Dam & Hydropower), technical office operations, and project control.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary" id="btn-hero-projects"><i class="fa-solid fa-helmet-safety"></i> View My Projects</a>
-                        <a href="#contact" class="btn btn-outline" id="btn-hero-contact"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+                        <a href="#projects" class="btn btn-primary" id="btn-hero-projects"><i class="fa-solid fa-helmet-safety"></i> <span data-i18n="btn_view_projects">View My Projects</span></a>
+                        <a href="#contact" class="btn btn-outline" id="btn-hero-contact"><i class="fa-solid fa-paper-plane"></i> <span data-i18n="btn_contact_me">Contact Me</span></a>
                     </div>
                 </div>
                 <div class="hero-image-container">
                     <div class="hero-img-frame glass-card">
                         <img src="assets/milad_profile.jpg" alt="Milad Kordi" class="hero-profile-img">
-                    </div>
+                      </div>
                 </div>
             </div>
         </div>
@@ -75,8 +80,8 @@
     <section id="skills" class="skills-section">
         <div class="section-container">
             <div class="section-header">
-                <span class="section-subtitle">Excellence Areas</span>
-                <h2 class="section-title">Core Competencies</h2>
+                <span class="section-subtitle" data-i18n="skills_sub">Excellence Areas</span>
+                <h2 class="section-title" data-i18n="skills_title">Core Competencies</h2>
                 <div class="section-divider"></div>
             </div>
             
@@ -86,12 +91,12 @@
                     <div class="skill-icon-wrapper">
                         <i class="fa-solid fa-file-invoice-dollar"></i>
                     </div>
-                    <h3>Construction Management</h3>
-                    <p class="skill-german">Baubetrieb & Controlling</p>
+                    <h3 data-i18n="skill_1_title">Construction Management</h3>
+                    <p class="skill-german" data-i18n="skill_1_sub">Baubetrieb & Controlling</p>
                     <ul class="skill-list">
-                        <li><i class="fa-solid fa-chevron-right"></i> Project Control & Scheduling (MS Project)</li>
-                        <li><i class="fa-solid fa-chevron-right"></i> Cost Estimation & Controlling</li>
-                        <li><i class="fa-solid fa-chevron-right"></i> Contract Management (BGB / VOB/B)</li>
+                        <li><i class="fa-solid fa-chevron-right"></i> <span data-i18n="skill_1_b1">Project Control & Scheduling (MS Project)</span></li>
+                        <li><i class="fa-solid fa-chevron-right"></i> <span data-i18n="skill_1_b2">Cost Estimation & Controlling</span></li>
+                        <li><i class="fa-solid fa-chevron-right"></i> <span data-i18n="skill_1_b3">Contract Management (BGB / VOB/B)</span></li>
                     </ul>
                 </div>
 
@@ -100,12 +105,12 @@
                     <div class="skill-icon-wrapper">
                         <i class="fa-solid fa-desktop"></i>
                     </div>
-                    <h3>Digital Drafting & CAD</h3>
-                    <p class="skill-german">Engineering Graphics & Design</p>
+                    <h3 data-i18n="skill_2_title">Digital Drafting & CAD</h3>
+                    <p class="skill-german" data-i18n="skill_2_sub">Engineering Graphics & Design</p>
                     <ul class="skill-list">
-                        <li><i class="fa-solid fa-chevron-right"></i> AutoCAD 2D/3D Drafting</li>
-                        <li><i class="fa-solid fa-chevron-right"></i> BIM Modeling (Revit workflows)</li>
-                        <li><i class="fa-solid fa-chevron-right"></i> Photoshop & CorelDraw Graphic Design</li>
+                        <li><i class="fa-solid fa-chevron-right"></i> <span data-i18n="skill_2_b1">AutoCAD 2D/3D Drafting</span></li>
+                        <li><i class="fa-solid fa-chevron-right"></i> <span data-i18n="skill_2_b2">BIM Modeling (Revit workflows)</span></li>
+                        <li><i class="fa-solid fa-chevron-right"></i> <span data-i18n="skill_2_b3">Photoshop & CorelDraw Graphic Design</span></li>
                     </ul>
                 </div>
 
@@ -114,13 +119,13 @@
                     <div class="skill-icon-wrapper">
                         <i class="fa-solid fa-language"></i>
                     </div>
-                    <h3>Language Capabilities</h3>
-                    <p class="skill-german">Bilingual Professional</p>
+                    <h3 data-i18n="skill_3_title">Language Capabilities</h3>
+                    <p class="skill-german" data-i18n="skill_3_sub">Bilingual Professional</p>
                     <ul class="skill-list">
-                        <li><i class="fa-solid fa-chevron-right"></i> German: C1 (Professional working proficiency)</li>
-                        <li><i class="fa-solid fa-chevron-right"></i> Russian / Tajik: B1 / C1 (Fluent)</li>
-                        <li><i class="fa-solid fa-chevron-right"></i> English: A2 (Technical terminology)</li>
-                        <li><i class="fa-solid fa-chevron-right"></i> Persian: Native</li>
+                        <li><i class="fa-solid fa-chevron-right"></i> <span data-i18n="skill_3_b1">German: C1 (Professional working proficiency)</span></li>
+                        <li><i class="fa-solid fa-chevron-right"></i> <span data-i18n="skill_3_b2">Russian / Tajik: B1 / C1 (Fluent)</span></li>
+                        <li><i class="fa-solid fa-chevron-right"></i> <span data-i18n="skill_3_b3">English: A2 (Technical terminology)</span></li>
+                        <li><i class="fa-solid fa-chevron-right"></i> <span data-i18n="skill_3_b4">Persian: Native</span></li>
                     </ul>
                 </div>
 
@@ -129,12 +134,12 @@
                     <div class="skill-icon-wrapper">
                         <i class="fa-solid fa-bridge"></i>
                     </div>
-                    <h3>Structural Engineering</h3>
-                    <p class="skill-german">Tragwerksplanung</p>
+                    <h3 data-i18n="skill_4_title">Structural Engineering</h3>
+                    <p class="skill-german" data-i18n="skill_4_sub">Tragwerksplanung</p>
                     <ul class="skill-list">
-                        <li><i class="fa-solid fa-chevron-right"></i> Industrial and Civil Buildings (IBB)</li>
-                        <li><i class="fa-solid fa-chevron-right"></i> Concrete & Metal Structures analysis</li>
-                        <li><i class="fa-solid fa-chevron-right"></i> Geodetic surveying and geological assessments</li>
+                        <li><i class="fa-solid fa-chevron-right"></i> <span data-i18n="skill_4_b1">Industrial and Civil Buildings (IBB)</span></li>
+                        <li><i class="fa-solid fa-chevron-right"></i> <span data-i18n="skill_4_b2">Concrete & Metal Structures analysis</span></li>
+                        <li><i class="fa-solid fa-chevron-right"></i> <span data-i18n="skill_4_b3">Geodetic surveying and geological assessments</span></li>
                     </ul>
                 </div>
             </div>
@@ -145,17 +150,17 @@
     <section id="projects" class="projects-section">
         <div class="section-container">
             <div class="section-header">
-                <span class="section-subtitle">Portfolio</span>
-                <h2 class="section-title">Key Projects</h2>
+                <span class="section-subtitle" data-i18n="proj_sub">Portfolio</span>
+                <h2 class="section-title" data-i18n="proj_title">Key Projects</h2>
                 <div class="section-divider"></div>
             </div>
 
             <!-- Filter Controls -->
             <div class="filter-controls" id="portfolio-filters">
-                <button class="filter-btn active" data-filter="all" id="filter-all">All Projects</button>
-                <button class="filter-btn" data-filter="management" id="filter-management">Management & Control</button>
-                <button class="filter-btn" data-filter="bim" id="filter-bim">BIM & CAD</button>
-                <button class="filter-btn" data-filter="structural" id="filter-structural">Structural / Field</button>
+                <button class="filter-btn active" data-filter="all" id="filter-all" data-i18n="filter_all">All Projects</button>
+                <button class="filter-btn" data-filter="management" id="filter-management" data-i18n="filter_mgmt">Management & Control</button>
+                <button class="filter-btn" data-filter="bim" id="filter-bim" data-i18n="filter_bim">BIM & CAD</button>
+                <button class="filter-btn" data-filter="structural" id="filter-structural" data-i18n="filter_structural">Structural / Field</button>
             </div>
 
             <!-- Projects Grid -->
@@ -164,13 +169,13 @@
                 <div class="project-card glass-card" data-category="management structural" id="project-roghun-dam">
                     <div class="project-header-card">
                         <i class="fa-solid fa-water-ladder project-icon"></i>
-                        <span class="project-tag">Project Control</span>
+                        <span class="project-tag" data-i18n="p1_tag">Project Control</span>
                     </div>
-                    <h3>Roghun Dam & Hydropower Project</h3>
-                    <p>Served as Technical Office Engineer and Project Control specialist for Maroon Civil Engineers. Managed technical documentation, reporting, and engineering graphics for the Roghun Dam construction in Tajikistan (one of the tallest clay-core dams in the world).</p>
+                    <h3 data-i18n="p1_title">Roghun Dam & Hydropower Project</h3>
+                    <p data-i18n="p1_desc">Served as Technical Office Engineer and Project Control specialist for Maroon Civil Engineers. Managed technical documentation, reporting, and engineering graphics for the Roghun Dam construction in Tajikistan (one of the tallest clay-core dams in the world).</p>
                     <div class="project-footer">
                         <span><i class="fa-regular fa-clock"></i> 2015 - 2017</span>
-                        <a href="#" class="project-link" id="link-proj-roghun">Read Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="#" class="project-link" id="link-proj-roghun"><span data-i18n="p1_link">Read Case Study</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
 
@@ -178,13 +183,13 @@
                 <div class="project-card glass-card" data-category="structural bim" id="project-bachelor-thesis">
                     <div class="project-header-card">
                         <i class="fa-solid fa-calculator project-icon"></i>
-                        <span class="project-tag">Structural / CAD</span>
+                        <span class="project-tag" data-i18n="p2_tag">Structural / CAD</span>
                     </div>
-                    <h3>Industrial & Civil Construction Thesis</h3>
-                    <p>Completed structural design and reinforcement calculations for civil buildings, majoring in Industrial and Civil Construction. Performed site calculations, designed structural drawings in AutoCAD, and handled metal frame calculations.</p>
+                    <h3 data-i18n="p2_title">Industrial & Civil Construction Thesis</h3>
+                    <p data-i18n="p2_desc">Completed structural design and reinforcement calculations for civil buildings, majoring in Industrial and Civil Construction. Performed site calculations, designed structural drawings in AutoCAD, and handled metal frame calculations.</p>
                     <div class="project-footer">
                         <span><i class="fa-regular fa-clock"></i> 2014</span>
-                        <a href="#" class="project-link" id="link-proj-thesis">View Design Drawings <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="#" class="project-link" id="link-proj-thesis"><span data-i18n="p2_link">View Design Drawings</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
 
@@ -192,13 +197,13 @@
                 <div class="project-card glass-card" data-category="management" id="project-spatial-planning">
                     <div class="project-header-card">
                         <i class="fa-solid fa-map-location-dot project-icon"></i>
-                        <span class="project-tag">Spatial Planning</span>
+                        <span class="project-tag" data-i18n="p3_tag">Spatial Planning</span>
                     </div>
-                    <h3>Regional Science Research</h3>
-                    <p>Conducted academic research in regional science and spatial planning at the Karlsruhe Institute of Technology (KIT). Modeled development frameworks and infrastructure network distributions for regional sustainability.</p>
+                    <h3 data-i18n="p3_title">Regional Science Research</h3>
+                    <p data-i18n="p3_desc">Conducted academic research in regional science and spatial planning at the Karlsruhe Institute of Technology (KIT). Modeled development frameworks and infrastructure network distributions for regional sustainability.</p>
                     <div class="project-footer">
                         <span><i class="fa-regular fa-clock"></i> 2020 - 2023</span>
-                        <a href="#" class="project-link" id="link-proj-spatial">View Research <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="#" class="project-link" id="link-proj-spatial"><span data-i18n="p3_link">View Research</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -209,83 +214,83 @@
     <section id="calculator" class="calc-section animate-on-scroll">
         <div class="section-container">
             <div class="section-header">
-                <span class="section-subtitle">Engineering Tool</span>
-                <h2 class="section-title">Concrete Estimator & Cost Utility</h2>
+                <span class="section-subtitle" data-i18n="calc_sub">Engineering Tool</span>
+                <h2 class="section-title" data-i18n="calc_title">Concrete Estimator & Cost Utility</h2>
                 <div class="section-divider"></div>
             </div>
 
             <div class="calc-wrapper glass-card" id="calculator-box">
                 <div class="calc-grid">
                     <div class="calc-inputs">
-                        <h3 class="calc-panel-title">Structure Parameters</h3>
+                        <h3 class="calc-panel-title" data-i18n="calc_in_title">Structure Parameters</h3>
                         
                         <div class="input-group">
-                            <label for="calc-structure-type">Structure Type</label>
+                            <label for="calc-structure-type" data-i18n="lbl_struct_type">Structure Type</label>
                             <select id="calc-structure-type" class="calc-select">
-                                <option value="slab">Slab / Foundation Plate</option>
-                                <option value="beam">Beam / Column</option>
+                                <option value="slab" data-i18n="opt_slab">Slab / Foundation Plate</option>
+                                <option value="beam" data-i18n="opt_beam">Beam / Column</option>
                             </select>
                         </div>
 
                         <div class="input-row">
                             <div class="input-group">
-                                <label for="calc-length">Length (m)</label>
+                                <label for="calc-length" data-i18n="lbl_length">Length (m)</label>
                                 <input type="number" id="calc-length" class="calc-input" value="12.0" step="0.1" min="0.1">
                             </div>
                             <div class="input-group">
-                                <label for="calc-width">Width (m)</label>
+                                <label for="calc-width" data-i18n="lbl_width">Width (m)</label>
                                 <input type="number" id="calc-width" class="calc-input" value="8.0" step="0.1" min="0.1">
                             </div>
                         </div>
 
                         <div class="input-group">
-                            <label for="calc-thickness" id="label-thickness">Thickness (m)</label>
+                            <label for="calc-thickness" id="label-thickness" data-i18n="lbl_thickness">Thickness (m)</label>
                             <input type="number" id="calc-thickness" class="calc-input" value="0.25" step="0.01" min="0.01">
                         </div>
 
                         <div class="input-group">
-                            <label for="calc-concrete-class">Concrete Grade (Eurocode 2)</label>
+                            <label for="calc-concrete-class" data-i18n="lbl_grade">Concrete Grade (Eurocode 2)</label>
                             <select id="calc-concrete-class" class="calc-select">
-                                <option value="C20/25">C20/25 (Standard structural concrete)</option>
-                                <option value="C25/30" selected>C25/30 (High durability slab)</option>
-                                <option value="C30/37">C30/37 (High load capacity columns)</option>
-                                <option value="C35/45">C35/45 (Heavy industrial foundations)</option>
+                                <option value="C20/25" data-i18n="opt_grade_1">C20/25 (Standard structural concrete)</option>
+                                <option value="C25/30" selected data-i18n="opt_grade_2">C25/30 (High durability slab)</option>
+                                <option value="C30/37" data-i18n="opt_grade_3">C30/37 (High load capacity columns)</option>
+                                <option value="C35/45" data-i18n="opt_grade_4">C35/45 (Heavy industrial foundations)</option>
                             </select>
                         </div>
 
                         <div class="input-group">
-                            <label for="calc-unit-cost">Estimated Material Cost (€/m³)</label>
+                            <label for="calc-unit-cost" data-i18n="lbl_unit_cost">Estimated Material Cost (€/m³)</label>
                             <input type="number" id="calc-unit-cost" class="calc-input" value="160" step="5" min="50">
                         </div>
 
-                        <button class="btn btn-primary btn-block" id="calc-submit-btn"><i class="fa-solid fa-calculator"></i> Calculate Volume & Costs</button>
+                        <button class="btn btn-primary btn-block" id="calc-submit-btn"><i class="fa-solid fa-calculator"></i> <span data-i18n="btn_calc">Calculate Volume & Costs</span></button>
                     </div>
 
                     <div class="calc-results" id="calculator-results-panel">
-                        <h3 class="calc-panel-title">Calculation Outputs</h3>
+                        <h3 class="calc-panel-title" data-i18n="calc_out_title">Calculation Outputs</h3>
                         
                         <div class="result-metric-large">
                             <span class="metric-value" id="res-volume">24.00</span>
-                            <span class="metric-unit">m³ of Concrete</span>
+                            <span class="metric-unit" data-i18n="res_vol_unit">m³ of Concrete</span>
                         </div>
 
                         <div class="results-breakdown">
                             <div class="breakdown-item">
-                                <span class="breakdown-label"><i class="fa-solid fa-weight-hanging"></i> Total Material Mass:</span>
+                                <span class="breakdown-label"><i class="fa-solid fa-weight-hanging"></i> <span data-i18n="res_mass_lbl">Total Material Mass:</span></span>
                                 <span class="breakdown-value" id="res-mass">60.00 tons</span>
                             </div>
                             <div class="breakdown-item">
-                                <span class="breakdown-label"><i class="fa-solid fa-euro-sign"></i> Material Cost Estimate:</span>
+                                <span class="breakdown-label"><i class="fa-solid fa-euro-sign"></i> <span data-i18n="res_cost_lbl">Material Cost Estimate:</span></span>
                                 <span class="breakdown-value" id="res-cost">€3,840.00</span>
                             </div>
                             <div class="breakdown-item">
-                                <span class="breakdown-label"><i class="fa-solid fa-shield-halved"></i> Characteristic Strength:</span>
+                                <span class="breakdown-label"><i class="fa-solid fa-shield-halved"></i> <span data-i18n="res_strength_lbl">Characteristic Strength:</span></span>
                                 <span class="breakdown-value" id="res-strength">25 N/mm² (Cylinder)</span>
                             </div>
                         </div>
 
                         <div class="result-note">
-                            <p><i class="fa-solid fa-info-circle"></i> Calculation assumes concrete density is 2.5 t/m³ (reinforced). Costs exclude labor, transport, formwork, and reinforcement steel.</p>
+                            <p data-i18n="calc_disclaimer"><i class="fa-solid fa-info-circle"></i> Calculation assumes concrete density is 2.5 t/m³ (reinforced). Costs exclude labor, transport, formwork, and reinforcement steel.</p>
                         </div>
                     </div>
                 </div>
@@ -297,8 +302,8 @@
     <section id="timeline" class="timeline-section animate-on-scroll">
         <div class="section-container">
             <div class="section-header">
-                <span class="section-subtitle">Milestones</span>
-                <h2 class="section-title">Education & Career Journey</h2>
+                <span class="section-subtitle" data-i18n="time_sub">Milestones</span>
+                <h2 class="section-title" data-i18n="time_title">Education & Career Journey</h2>
                 <div class="section-divider"></div>
             </div>
 
@@ -308,9 +313,9 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-date">2023 - Present</div>
                     <div class="timeline-content glass-card">
-                        <h3>M.Sc. Civil Engineering (Bauingenieurwesen)</h3>
-                        <span class="timeline-location">Universität Duisburg-Essen, Germany</span>
-                        <p>Specializing in Construction Management (Baubetrieb) and Economics. Focus areas: corporate goals strategy, cost estimation, project development, and controlling.</p>
+                        <h3 data-i18n="t1_title">M.Sc. Civil Engineering (Bauingenieurwesen)</h3>
+                        <span class="timeline-location" data-i18n="t1_loc">Universität Duisburg-Essen, Germany</span>
+                        <p data-i18n="t1_desc">Specializing in Construction Management (Baubetrieb) and Economics. Focus areas: corporate goals strategy, cost estimation, project development, and controlling.</p>
                     </div>
                 </div>
 
@@ -319,9 +324,9 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-date">2020 - 2023</div>
                     <div class="timeline-content glass-card">
-                        <h3>Postgraduate Studies in Spatial Planning</h3>
-                        <span class="timeline-location">Karlsruhe Institute of Technology (KIT), Germany</span>
-                        <p>Investigated regional development plans, spatial planning parameters, and infrastructure distribution grids.</p>
+                        <h3 data-i18n="t2_title">Postgraduate Studies in Spatial Planning</h3>
+                        <span class="timeline-location" data-i18n="t2_loc">Karlsruhe Institute of Technology (KIT), Germany</span>
+                        <p data-i18n="t2_desc">Investigated regional development plans, spatial planning parameters, and infrastructure distribution grids.</p>
                     </div>
                 </div>
 
@@ -330,9 +335,9 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-date">2015 - 2017</div>
                     <div class="timeline-content glass-card">
-                        <h3>Technical Office Engineer & Project Control</h3>
-                        <span class="timeline-location">Maroun Bauingenieure, Roghun Dam Project (Tajikistan)</span>
-                        <p>Prepared design specifications, site quantity monitoring reports, and coordinated technical office graphical structures for a major dam and hydropower development.</p>
+                        <h3 data-i18n="t3_title">Technical Office Engineer & Project Control</h3>
+                        <span class="timeline-location" data-i18n="t3_loc">Maroun Bauingenieure, Roghun Dam Project (Tajikistan)</span>
+                        <p data-i18n="t3_desc">Prepared design specifications, site quantity monitoring reports, and coordinated technical office graphical structures for a major dam and hydropower development.</p>
                     </div>
                 </div>
 
@@ -341,9 +346,9 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-date">2009 - 2014</div>
                     <div class="timeline-content glass-card">
-                        <h3>B.Sc. Civil Engineering (Bauingenieurwesen)</h3>
-                        <span class="timeline-location">Tajik National Technical University, Dushanbe</span>
-                        <p>Specialization: Industrial and Civil Construction (Industrieller und bürgerliches Bauwesen). Finished internships in Geodesy and Geology.</p>
+                        <h3 data-i18n="t4_title">B.Sc. Civil Engineering (Bauingenieurwesen)</h3>
+                        <span class="timeline-location" data-i18n="t4_loc">Tajik National Technical University, Dushanbe</span>
+                        <p data-i18n="t4_desc">Specialization: Industrial and Civil Construction (Industrieller und bürgerliches Bauwesen). Finished internships in Geodesy and Geology.</p>
                     </div>
                 </div>
 
@@ -352,9 +357,9 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-date">2006 - 2009</div>
                     <div class="timeline-content glass-card">
-                        <h3>Sales Manager</h3>
-                        <span class="timeline-location">Naghsh Peyvande Omid Construction Company, Iran</span>
-                        <p>Managed client relationships and sales pipelines in the commercial real estate and construction material sector.</p>
+                        <h3 data-i18n="t5_title">Sales Manager</h3>
+                        <span class="timeline-location" data-i18n="t5_loc">Naghsh Peyvande Omid Construction Company, Iran</span>
+                        <p data-i18n="t5_desc">Managed client relationships and sales pipelines in the commercial real estate and construction material sector.</p>
                     </div>
                 </div>
             </div>
@@ -365,16 +370,16 @@
     <section id="contact" class="contact-section animate-on-scroll">
         <div class="section-container">
             <div class="section-header">
-                <span class="section-subtitle">Get In Touch</span>
-                <h2 class="section-title">Contact & Cooperation</h2>
+                <span class="section-subtitle" data-i18n="cont_sub">Get In Touch</span>
+                <h2 class="section-title" data-i18n="cont_title">Contact & Cooperation</h2>
                 <div class="section-divider"></div>
             </div>
 
             <div class="contact-grid">
                 <!-- Info Column -->
                 <div class="contact-info glass-card" id="contact-info-panel">
-                    <h3>Milad Kordi</h3>
-                    <p>Ready for professional engineering opportunities, project controlling roles, or BIM coordination projects in Germany and internationally. Send a message to start working together.</p>
+                    <h3 data-i18n="cont_info_title">Milad Kordi</h3>
+                    <p data-i18n="cont_info_desc">Ready for professional engineering opportunities, project controlling roles, or BIM coordination projects in Germany and internationally. Send a message to start working together.</p>
                     
                     <div class="info-list">
                         <div class="info-item">
@@ -402,27 +407,27 @@
                 <div class="contact-form-wrapper glass-card" id="contact-form-panel">
                     <form id="portfolio-contact-form" action="#" method="POST">
                         <div class="form-group">
-                            <label for="form-name">Name</label>
+                            <label for="form-name" data-i18n="form_name_lbl">Name</label>
                             <input type="text" id="form-name" class="form-input" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <label for="form-email">Email Address</label>
+                            <label for="form-email" data-i18n="form_email_lbl">Email Address</label>
                             <input type="email" id="form-email" class="form-input" placeholder="name@domain.com" required>
                         </div>
                         <div class="form-group">
-                            <label for="form-subject">Subject</label>
+                            <label for="form-subject" data-i18n="form_subj_lbl">Subject</label>
                             <input type="text" id="form-subject" class="form-input" placeholder="Project, Job, Cooperation..." required>
                         </div>
                         <div class="form-group">
-                            <label for="form-message">Message</label>
+                            <label for="form-message" data-i18n="form_msg_lbl">Message</label>
                             <textarea id="form-message" class="form-input" rows="5" placeholder="How can we cooperate?" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary" id="btn-submit-contact"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+                        <button type="submit" class="btn btn-primary" id="btn-submit-contact"><i class="fa-solid fa-paper-plane"></i> <span data-i18n="form_submit_btn">Send Message</span></button>
                     </form>
                     <div class="form-success-message" id="form-success-alert" style="display: none;">
                         <i class="fa-solid fa-circle-check"></i>
-                        <h4>Message Sent Successfully!</h4>
-                        <p>Thank you, Milad Kordi will review your message and reply shortly.</p>
+                        <h4 data-i18n="form_success_title">Message Sent Successfully!</h4>
+                        <p data-i18n="form_success_desc">Thank you, Milad Kordi will review your message and reply shortly.</p>
                     </div>
                 </div>
             </div>
@@ -432,8 +437,8 @@
     <!-- Footer Section -->
     <footer class="main-footer" id="page-footer">
         <div class="footer-container">
-            <p>&copy; 2026 Milad Kordi. Civil Engineering & Construction Management. All Rights Reserved.</p>
-            <p class="footer-design-tag">Designed with Premium Glassmorphism & Precise Engineering Aesthetics</p>
+            <p data-i18n="footer_copy">&copy; 2026 Milad Kordi. Civil Engineering & Construction Management. All Rights Reserved.</p>
+            <p class="footer-design-tag" data-i18n="footer_tag">Designed with Premium Glassmorphism & Precise Engineering Aesthetics</p>
         </div>
     </footer>
 

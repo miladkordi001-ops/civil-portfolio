@@ -1038,3 +1038,117 @@ textarea.form-input {
         max-width: 260px;
     }
 }
+
+/* ==========================================================================
+   Language Switcher & RTL Styling
+   ========================================================================== */
+.lang-switcher {
+    display: flex;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-glass);
+    padding: 4px;
+    border-radius: 30px;
+    margin-left: 20px;
+}
+
+.lang-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.lang-btn:hover {
+    color: var(--color-cyan);
+}
+
+.lang-btn.active {
+    background: linear-gradient(135deg, var(--color-cyan), var(--color-blue));
+    color: var(--bg-darker);
+    box-shadow: 0 2px 8px rgba(0, 242, 254, 0.2);
+}
+
+/* Farsi RTL Overrides */
+html[dir="rtl"] body {
+    font-family: 'Vazirmatn', sans-serif;
+    text-align: right;
+}
+
+html[dir="rtl"] h1, 
+html[dir="rtl"] h2, 
+html[dir="rtl"] h3, 
+html[dir="rtl"] h4, 
+html[dir="rtl"] h5, 
+html[dir="rtl"] h6,
+html[dir="rtl"] .btn,
+html[dir="rtl"] .filter-btn,
+html[dir="rtl"] .lang-btn {
+    font-family: 'Vazirmatn', sans-serif;
+    letter-spacing: normal;
+}
+
+/* RTL layout alignments */
+html[dir="rtl"] .skill-card,
+html[dir="rtl"] .calc-panel-title,
+html[dir="rtl"] .timeline-content,
+html[dir="rtl"] .contact-info,
+html[dir="rtl"] .contact-form-wrapper {
+    text-align: right;
+}
+
+html[dir="rtl"] .calc-panel-title {
+    border-left: none;
+    border-right: 3px solid var(--color-cyan);
+    padding-left: 0;
+    padding-right: 12px;
+}
+
+html[dir="rtl"] .skill-list li i {
+    transform: rotate(180deg);
+}
+
+html[dir="rtl"] .timeline-wrapper {
+    padding-left: 0;
+    padding-right: 30px;
+}
+
+html[dir="rtl"] .timeline-wrapper::before {
+    left: auto;
+    right: 4px;
+}
+
+html[dir="rtl"] .timeline-dot {
+    left: auto;
+    right: -30px;
+}
+
+html[dir="rtl"] .calc-inputs {
+    border-right: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 968px) {
+    html[dir="rtl"] .calc-inputs {
+        border-left: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+}
+
+@media (max-width: 768px) {
+    .lang-switcher {
+        margin-left: 0;
+        margin-top: 10px;
+        justify-content: center;
+    }
+    
+    html[dir="rtl"] .timeline-wrapper {
+        padding-right: 20px;
+    }
+}
